@@ -1,0 +1,22 @@
+FAMILY FONTS
+/* SERIF 'Georgia Pro',Georgia,'Droid Serif', serif; */
+/* SANS-SERIF 'Unify Sans','Helvetica Neue','Arial Nova', Helvetica, Arial, sans-serif; */
+/* SANS-SERIF 'Helvetica Neue','Arial Nova',Helvetica,Arial,sans-serif; */
+
+COLORS
+* Grey
+  - Black: #000000
+  - Dark grey: #282c34
+  - Shadow: #cccccc
+  - White: #ffffff
+* Yellow-Green
+  - lighter: #fdfff7;
+  - light: #f0f7d9
+* Dark Green
+  - normal: #468074
+* Orange
+  - lighter: #FEF4EB
+  - normal: #F69471
+  - dark: #ac350b
+* Brown
+  - normal: #EFD1B9
