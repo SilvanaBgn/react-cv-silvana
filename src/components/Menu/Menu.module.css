@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+  background-color: #282c34;
+}
+
+.button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-style: none;
+  cursor: pointer;
+}
+.buttonBurger {
+  background: url('../../assets/menu_burger.svg') no-repeat top left/40px;
+}
+.buttonClose {
+  margin: 10px -5px 0 0;
+  background: url('../../assets/menu_close.svg') no-repeat top left/30px;
+}
+
+.menuClosed {
+  display: none;
+}
+.menuOpened {
+  position: absolute;
+  right: 0;
+  width: 400px;
+  padding: 10px 0 10px 20px;
+  margin: 0;
+  background-color: #FEF4EB;
+  list-style-type: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #cccccc;
+}
