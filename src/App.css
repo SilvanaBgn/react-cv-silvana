@@ -1,15 +1,21 @@
 .App {
-  font-family: 'Unify Sans', 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family-sans-serif);
   text-align: center;
+}
+.AppPage {
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  padding-top: var(--header-height);
 }
 p {
   margin: 0;
 }
 footer {
   box-sizing: border-box;
-  height: 40px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: var(--footer-height);
   padding: 10px;
-  margin: 20px 0 0;
   background-color: #282c34;
   color: #ffffff;
 }

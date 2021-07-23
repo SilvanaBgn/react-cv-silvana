@@ -18,9 +18,12 @@ function App() {
   return (
     <div className="App">
       <Menu menuItems ={items}/>
-      {/* <WhoIAmPage className="WhoIAm"/> */}
-      {/* <WorkPage className="Work" title='Experiencia Laboral' iconPath={`assets/work_experience.svg`}/> */}
-      <footer>Thanks for passing by</footer>
+      <div className="AppPage">
+        {/* <WhoIAmPage /> */}
+        {/* <WorkPage className="Work" title='Experiencia Laboral' iconPath={`assets/work_experience.svg`}/> */}
+        <section style={{height:'1200px'}}></section>
+      </div>
+      <footer>Thanks for passing by! See you next time :)</footer>
     </div>
   );
 }

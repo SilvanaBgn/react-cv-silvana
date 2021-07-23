@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Menu.module.css';
-import Profile from '../Profile/Profile';
+import ProfileMenu from '../ProfileMenu/ProfileMenu';
 import MenuItem from '../MenuItem/MenuItem';
 
 
@@ -22,17 +22,15 @@ class Menu extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
-        <header className={styles.header}>
-          <Profile/>
-          <button className={`${styles.button} ${this.state.menuOpened ? styles.buttonClose : styles.buttonBurger}`} onClick={this.onBurgerClick}></button>
-        </header>
+      <header className={styles.header}>
+        <ProfileMenu/>
+        <button className={`${styles.button} ${this.state.menuOpened ? styles.buttonClose : styles.buttonBurger}`} onClick={this.onBurgerClick}></button>
         <ul className={this.state.menuOpened ? styles.menuOpened : styles.menuClosed} >
           {this.items.map((element, i) => {
             return <MenuItem key={i} itemName={element.itemName} iconPath={`assets/${element.iconName}.svg`} />
           })}
         </ul>
-      </React.Fragment>
+      </header>
     );
   }
 }

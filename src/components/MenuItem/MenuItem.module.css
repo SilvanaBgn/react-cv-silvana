@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   height: 70px;
-  font: 700 18px/22px 'Unify Sans','Helvetica Neue','Arial Nova', Helvetica, Arial, sans-serif;
+  font: 700 18px/22px var(--font-family-sans-serif);
 }
 
 .item:hover {
