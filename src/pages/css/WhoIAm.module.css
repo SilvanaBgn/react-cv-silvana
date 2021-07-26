@@ -17,7 +17,7 @@
 } 
 
 section.presentation {
-  margin: 0 auto;
+  margin: 0 auto 100px;
   padding: 0 40px;
   max-width: 1200px;
   min-width: 660px;
@@ -28,14 +28,14 @@ section.presentation {
 }
 
 .name {
-  font: 700 36px/40px 'Unify Sans','Helvetica Neue','Arial Nova', Helvetica, Arial, sans-serif;
+  font: 700 36px/40px var(--font-family-sans-serif);
 }
 .job {
-  font: 700 26px/30px 'Unify Sans','Helvetica Neue','Arial Nova', Helvetica, Arial, sans-serif;
+  font: 700 26px/30px var(--font-family-sans-serif);
 }
 .degree {
   margin-top: 5px;
-  font: 20px/24px 'Unify Sans','Helvetica Neue','Arial Nova', Helvetica, Arial, sans-serif;
+  font: 20px/24px var(--font-family-sans-serif);
 }
 .biographyGroup {
   display: grid;
