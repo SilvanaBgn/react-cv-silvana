@@ -1,5 +1,6 @@
-import styles from './css/WhoIAm.module.css';
+import React from 'react';
 import Quote from '../components/Quote/Quote';
+import styles from './css/WhoIAm.module.css';
 import profilePic from '../assets/profile_pic.jpg';
 import backgroundPic from '../assets/stains.jpg';
 
@@ -19,7 +20,7 @@ const myName = "Silvana Belén García",
 
 function WhoIAm() {
   return (
-    <div>
+    <React.Fragment>
       <section>
         <img className={styles.background} src={backgroundPic} alt="background"/>
         <img className={styles.profilePic} src={profilePic} alt="profile pic"/>
@@ -42,7 +43,7 @@ function WhoIAm() {
           }
         </p>
       </section>
-    </div>
+    </React.Fragment>
   );
 }
 

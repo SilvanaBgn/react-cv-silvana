@@ -1,5 +1,5 @@
 import Menu from './components/Menu/Menu';
-// import WhoIAmPage from './pages/WhoIAm';
+import WhoIAmPage from './pages/WhoIAm';
 // import WorkPage from './pages/Work';
 import './App.css';
 
@@ -19,9 +19,9 @@ function App() {
     <div className="App">
       <Menu menuItems ={items}/>
       <div className="AppPage">
-        {/* <WhoIAmPage /> */}
+        <WhoIAmPage />
         {/* <WorkPage className="Work" title='Experiencia Laboral' iconPath={`assets/work_experience.svg`}/> */}
-        <section style={{height:'1200px'}}></section>
+        {/* <section style={{height:'1200px'}}></section> */}
       </div>
       <footer>Thanks for passing by! See you next time :)</footer>
     </div>
