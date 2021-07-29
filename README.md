@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# RUN THE PROJECT
+
+To run the project, go to this url: [https://silvanabgn.github.io/react-cv-silvana/](https://silvanabgn.github.io/react-cv-silvana/)
+
+# DEV Mode: Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
