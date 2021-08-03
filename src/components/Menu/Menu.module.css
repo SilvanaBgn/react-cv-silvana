@@ -8,6 +8,7 @@
   height: var(--header-height);
   padding: 0 20px;
   background-color: #282c34;
+  z-index: 2;
 }
 
 .button {
@@ -44,6 +45,15 @@
   margin: 0;
   background-color: #fef4eb;
   list-style-type: none;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px #cccccc;
+  border-radius: 0 0 0 5px;
+  box-shadow: 0 1px 5px #cccccc;
+}
+
+.menuBlocker {
+  position: fixed;
+  top: var(--header-height);
+  width: 100%;
+  height: calc(100vh - var(--header-height));
+  background-color: #282c34e6;
+  z-index: 1;
 }

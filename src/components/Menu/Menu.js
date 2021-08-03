@@ -3,7 +3,7 @@ import styles from './Menu.module.css';
 import ProfileMenu from '../ProfileMenu/ProfileMenu';
 import MenuItem from '../MenuItem/MenuItem';
 
-
+const blocker = <div className={styles.menuBlocker}></div>;
 class Menu extends React.Component {
   constructor(props){
     super();
@@ -22,6 +22,7 @@ class Menu extends React.Component {
 
   render() {
     return (
+      <React.Fragment>
       <header className={styles.header}>
         <ProfileMenu/>
         <button className={`${styles.button} ${this.state.menuOpened ? styles.buttonClose : styles.buttonBurger}`} onClick={this.onBurgerClick}></button>
@@ -31,6 +32,10 @@ class Menu extends React.Component {
           })}
         </ul>
       </header>
+      {
+        this.state.menuOpened ? blocker : null
+      }
+      </React.Fragment>
     );
   }
 }
