@@ -31,8 +31,8 @@ function WhoIAm() {
         <p className={styles.degree}>{myDegree}</p>
         <div className={styles.biographyGroup}>
         {
-          mySelfBiography.map((biography)=>{
-            return <Quote text={biography}/>
+          mySelfBiography.map((biography, i)=>{
+            return <Quote key={i} text={biography}/>
           })
         }
         </div>
