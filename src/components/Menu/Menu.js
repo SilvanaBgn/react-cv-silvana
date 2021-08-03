@@ -14,7 +14,7 @@ class Menu extends React.Component {
   };
 
   onBurgerClick = () => {
-    console.log('state', this.state);
+    // console.log('state', this.state);
     this.setState((prevState, prevProps) => {
       return { menuOpened: !prevState.menuOpened } 
     })
