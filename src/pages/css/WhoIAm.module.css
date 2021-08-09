@@ -14,16 +14,15 @@
   box-shadow: 0 4px 8px #cccccc;
   border-radius: 150px;
   object-fit: cover;
-} 
+}
 
 section.presentation {
   margin: 0 auto 100px;
   padding: 0 40px;
-  max-width: 1200px;
-  min-width: 660px;
 }
 
-.name, .job {
+.name,
+.job {
   margin-top: 10px;
 }
 

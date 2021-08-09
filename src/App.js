@@ -1,7 +1,8 @@
 import Menu from './components/Menu/Menu';
-// import WhoIAmPage from './pages/WhoIAm';
+import WhoIAmPage from './pages/WhoIAm';
 import WorkPage from './pages/Work';
 import './App.css';
+import React from 'react';
 
 
 const items = [
@@ -12,7 +13,7 @@ const items = [
   { itemName: 'Charlas', iconName: 'talks' },
   { itemName: 'Mis apuntes', iconName: 'my_notes' },
   { itemName: 'Contacto', iconName: 'contact' }
-]
+];
 
 function App() {
   return (
@@ -24,8 +25,8 @@ function App() {
         {/* <section style={{height:'1200px'}}></section> */}
       </div>
       <footer>Thanks for passing by! See you next time :)</footer>
-    </div>
-  );
-}
+      </div>
+  )
+};
 
 export default App;
