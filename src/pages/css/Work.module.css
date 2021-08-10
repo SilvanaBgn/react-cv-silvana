@@ -1,3 +1,5 @@
 .sectionWork {
-  margin: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px 40px;
 }

@@ -4,8 +4,9 @@
   align-content: flex-start;
   flex-wrap: wrap;
   width: 320px;
+  min-width: 320px;
   height: 80px;
-  padding: 20px 60px 15px 20px;
+  padding: 20px 60px 15px 0;
   margin: 30px 20px 20px;
   background-color: #ffffff;
   text-align: left;
@@ -21,13 +22,23 @@
   margin-top: -10px;
   background: url('../../assets/quotes.svg') no-repeat top left/60px;
 }
+.card::after {
+  content: '';
+  display: block;
+  order: -1;
+  min-width: 10px;
+  height: 120px;
+  margin: -20px 10px -15px 5px;
+  background: url('../../assets/stains.jpg') repeat top left/150px;
+}
 
 .cardTitle {
-  font: 22px/26px var(--font-family-sans-serif2);
+  font: 22px/30px var(--font-family-sans-serif2);
 }
 .cardCompany {
-  font: 20px/24px var(--font-family-sans-serif2);
+  font: 700 16px/24px var(--font-family-sans-serif2);
 }
-.cardDates{
-  font: 18px/20px var(--font-family-sans-serif2);
+.cardDates {
+  color: #282c34;
+  font: 14px/22px var(--font-family-sans-serif);
 }
