@@ -1,3 +1,5 @@
+import React from 'react';
+import CardDescription from './CardDescription';
 import styles from './Card.module.css';
 
 function getFormatedDate(pDate) {
@@ -10,14 +12,37 @@ function getFormatedDate(pDate) {
   return isToday ? 'present' : `${months[dateMonth-1]} ${dateYear}`; 
 }
 
-function Card(props) {
-  return (
-    <div className={styles.card}>
-      <p className={styles.cardTitle}>{props.item.title}</p>
-      <p className={styles.cardCompany}>{props.item.company}</p>
-      <p className={styles.cardDates}>{`${getFormatedDate(props.item.startDate)} - ${getFormatedDate(props.item.finishDate)}`}</p>
-    </div>
-  );
+class Card extends React.Component {
+  constructor(props){
+    super();
+    this.item = props.item;
+    this.expandable = this.item.expandable;
+    this.state = {
+      expanded: false
+    }
+  }
+
+  onCardClick = () => {
+    if (this.expandable) {
+      this.setState((prevState, prevProps) => {
+        return { expanded: !prevState.expanded}
+      })
+    }
+  }
+
+  render(){
+  console.log('render this:',this);
+    return (
+      <div className={styles.card} onClick={this.onCardClick}>
+        <p className={styles.cardTitle}>{this.item.title}</p>
+        <p className={styles.cardCompany}>{this.item.company}</p>
+        <p className={styles.cardDates}>{`${getFormatedDate(this.item.startDate)} - ${getFormatedDate(this.item.finishDate)}`}</p>
+        {this.state.expanded ? <CardDescription desc={this.expandable.description} techsArray={this.expandable.technologies} /> : null
+        }
+        
+      </div>
+    );
+  }
 }
 
 export default Card;
