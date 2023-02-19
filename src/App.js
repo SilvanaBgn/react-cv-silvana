@@ -1,6 +1,6 @@
 import Menu from './components/Menu/Menu';
 import WhoIAmPage from './pages/WhoIAm';
-// import WorkPage from './pages/Work';
+import WorkPage from './pages/Work';
 import './App.css';
 import React from 'react';
 
@@ -15,25 +15,18 @@ const items = [
   { itemName: 'Contacto', iconName: 'contact' }
 ];
 
-
-class App extends React.Component {
-  state = {
-    menuOpened: false
-  };
-  
-  render(){
-    return (
-      <div className="App">
-        <Menu menuItems={items} onClick={this.onBurgerClick}/>        
-        <div className="AppPage">
-          <WhoIAmPage />
-          {/* <WorkPage className="Work" title='Experiencia Laboral' iconPath={`assets/work_experience.svg`}/> */}
-          {/* <section style={{height:'1200px'}}></section> */}
-        </div>
-        <footer>Thanks for passing by! See you next time :)</footer>
+function App() {
+  return (
+    <div className="App">
+      <Menu menuItems ={items}/>
+      <div className="AppPage">
+        {/* <WhoIAmPage /> */}
+        <WorkPage className="Work" title='Experiencia Laboral' iconPath={`assets/work_experience.svg`}/>
+        {/* <section style={{height:'1200px'}}></section> */}
       </div>
-    );
-  }
-}
+      <footer>Thanks for passing by! See you next time :)</footer>
+      </div>
+  )
+};
 
 export default App;
